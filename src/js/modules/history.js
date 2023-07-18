@@ -1,3 +1,4 @@
+import initIncremento from "./incremento.js";
 import replaceContent from "./replaceContent.js";
 
 export default function initHistory() {
@@ -10,6 +11,7 @@ export default function initHistory() {
     const planet = json.filter((item) => item.name === planetName);
 
     replaceContent(planet[0]);
+    initIncremento();
   }
 
   function handleClick(event) {
