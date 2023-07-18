@@ -13,7 +13,10 @@ export default class Dom {
 
   // Remove uma classe de todos os elementos que a possuem
   static removeClass(element) {
-    const itens = document.querySelectorAll;
-    itens.forEach((item) => item.classList.remove(element));
+    const itens = document.querySelectorAll(`.${element}`);
+    itens.forEach((item) => {
+      console.log(item);
+      item.classList.remove(element);
+    });
   }
 }
