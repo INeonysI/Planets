@@ -24,8 +24,19 @@ export default function replaceContent(planet) {
   const radius = document.querySelector("[data-radius]");
   const temperature = document.querySelector("[data-temperature]");
 
-  rotation.innerText = planet.rotation;
-  revolution.innerText = planet.revolution;
-  radius.innerText = planet.radius;
-  temperature.innerText = planet.temperature;
+  const span = document.createElement("span");
+  span.setAttribute("data-float", "");
+
+  rotation.innerHTML = `<span data-float>${planet.rotation
+    .split(/\s/g)
+    .join("</span> ")}`;
+  revolution.innerHTML = `<span data-float>${planet.revolution
+    .split(/\s/g)
+    .join("</span> ")}`;
+  radius.innerHTML = `<span data-float>${planet.radius
+    .split(/\s/g)
+    .join("</span> ")}`;
+  temperature.innerHTML = `<span data-float>${planet.temperature
+    .split(/\s/g)
+    .join("</span> ")}`;
 }
