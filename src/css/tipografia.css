@@ -14,7 +14,7 @@
 }
 
 .text-H3 {
-  font-family: "Antonio", sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-size: 0.75rem;
   line-height: 200%;
   font-weight: 700;
@@ -22,15 +22,15 @@
 }
 
 .text-H4 {
-  font-family: "Antonio", sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-size: 0.6875rem;
   line-height: 227%;
   font-weight: 700;
-  letter-spacing: +1rem;
+  letter-spacing: +1px;
 }
 
 .text-BODY {
-  font-family: "Antonio", sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-size: 0.875rem;
   line-height: 170%;
   font-weight: 400;
