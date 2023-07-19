@@ -1,0 +1,44 @@
+:root {
+  --c1: #ffffff;
+  --c2: #070724;
+  --c3: #38384f;
+  --c4: #838391;
+  --c5: #419ebb;
+  --c6: #eda249;
+  --c7: #6f2ed6;
+  --c8: #d14c32;
+  --c9: #d83a34;
+  --c10: #cd5120;
+  --c11: #1ec2a4;
+  --c12: #2d68f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+
+  background-image: url("../assets/background-stars.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--c2);
+
+  color: var(--c1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 1rem;
+  line-height: 100%;
+}

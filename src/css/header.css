@@ -1,0 +1,138 @@
+.header {
+  height: 5.3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 5rem;
+
+  border-bottom: 1px solid #fff;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-family: "Antonio", sans-serif;
+  text-transform: uppercase;
+}
+
+.menu a {
+  text-transform: uppercase;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.chevron {
+  display: none;
+}
+
+.hamburguer {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    gap: 2.4rem;
+  }
+
+  .title {
+    margin-top: 32px;
+  }
+
+  .menu {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: row;
+    height: 4.3rem;
+    padding: 0 1.5rem;
+  }
+  .title {
+    margin: 0;
+  }
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem;
+
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    top: 4.3rem;
+    left: 0;
+    background-color: var(--c2);
+
+    margin: 0;
+  }
+
+  .menu li {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu a {
+    display: flex;
+    align-items: center;
+
+    font-size: 1rem;
+    line-height: 25px;
+  }
+  .menu a::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 25px;
+  }
+
+  .neptune::before {
+    background-color: #497efa;
+  }
+  .uranus::before {
+    background-color: #65f0d5;
+  }
+  .saturn::before {
+    background-color: #fccb6b;
+  }
+  .jupiter::before {
+    background-color: #ecad7a;
+  }
+  .mars::before {
+    background-color: #ff6a45;
+  }
+  .earth::before {
+    background-color: #545bfe;
+  }
+  .venus::before {
+    background-color: #f7cc7f;
+  }
+  .mercury::before {
+    background-color: #def4fc;
+  }
+
+  .chevron {
+    display: block;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+  .hamburguer {
+    display: block;
+  }
+}
