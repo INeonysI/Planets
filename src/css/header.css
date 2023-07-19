@@ -55,6 +55,8 @@
     flex-direction: row;
     height: 4.3rem;
     padding: 0 1.5rem;
+
+    overflow: hidden;
   }
   .title {
     margin: 0;
@@ -67,6 +69,10 @@
 
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
+
+    transition: all 0.3s;
+    animation: fillScreen 1.5s forwards;
 
     position: absolute;
     top: 4.3rem;
@@ -134,5 +140,18 @@
   }
   .hamburguer {
     display: block;
+    fill: var(--c1);
+  }
+  .hamburguer.open {
+    fill: #979797;
+  }
+}
+
+@keyframes fillScreen {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100vh;
   }
 }
