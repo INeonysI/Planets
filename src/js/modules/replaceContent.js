@@ -1,4 +1,5 @@
 export default function replaceContent(planet) {
+  console.log(planet);
   // Substitui as imagens
   const img = document.querySelector("[data-image=default]");
   const imgInternal = document.querySelector("[data-image=internal]");
@@ -8,15 +9,16 @@ export default function replaceContent(planet) {
   imgInternal.src = planet.images.internal;
   imgSurface.src = planet.images.geology;
 
-  const overview = document.querySelector("[data-overview]");
-  const structure = document.querySelector("[data-structure]");
-  const surface = document.querySelector("[data-surface]");
+  const overview = document.querySelector("p[data-overview]");
+  const structure = document.querySelector("p[data-structure]");
+  const surface = document.querySelector("p[data-surface]");
 
   overview.innerText = planet.overview.content;
   overview.nextElementSibling.href = planet.overview.source;
   structure.innerText = planet.structure.content;
   structure.nextElementSibling.href = planet.structure.source;
   surface.innerText = planet.geology.content;
+  console.log(surface);
   surface.nextElementSibling.href = planet.geology.source;
 
   const rotation = document.querySelector("[data-rotation]");

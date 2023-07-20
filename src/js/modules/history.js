@@ -1,3 +1,4 @@
+import format from "./format.js";
 import initIncremento from "./incremento.js";
 import replaceContent from "./replaceContent.js";
 
@@ -8,8 +9,9 @@ export default function initHistory() {
     const response = await fetch("./data.json");
     const json = await response.json();
 
-    const planet = json.filter((item) => item.name === planetName);
-
+    const planet = json.filter(
+      (item) => item.name === format.capitalize(planetName)
+    );
     replaceContent(planet[0]);
     initIncremento();
   }
