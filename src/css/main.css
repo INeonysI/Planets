@@ -2,12 +2,11 @@
 main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 1fr;
   justify-content: space-between;
   gap: 20px;
 
   width: 80%;
-  margin: 120px auto 70px auto;
+  margin: 120px auto 0 auto;
 }
 
 .content .visible {
@@ -178,6 +177,7 @@ img[data-surface] {
 
   .image-container {
     margin-top: 60px;
+    max-width: 100%;
   }
 
   .buttons {
