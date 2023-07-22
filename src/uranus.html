@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planetas</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@300;400;500;700&family=League+Spartan:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta
+      name="description"
+      content="Aprenda sobre os planetas, seus interiores e suas superfícies com a ajudar de uma interface amigável e interativa!"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">The planets</h1>
+
+      <nav>
+        <svg
+          class="hamburguer"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="17"
+        >
+          <g fill="" fill-rule="evenodd">
+            <path d="M0 0h24v3H0zM0 7h24v3H0zM0 14h24v3H0z" />
+          </g>
+        </svg>
+        <ul class="menu">
+          <li>
+            <a class="text-H4 mercury" href="mercury.html" data-history
+              >mercury</a
+            >
+            <img class="chevron" src="./assets/icon-chevron.svg" alt="" />
+          </li>
+          <li>
+            <a class="text-H4 venus" href="venus.html" data-history>venus</a>
+            <img class="chevron" src="./assets/icon-chevron.svg" alt="" />
+          </li>
+          <li>
+            <a class="text-H4 earth" href="earth.html" data-history>earth</a>
+            <img class="chevron" src="./assets/icon-chevron.svg" alt="" />
+          </li>
+          <li>
+            <a class="text-H4 mars" href="mars.html" data-history>mars</a>
+            <img class="chevron" src="./assets/icon-chevron.svg" alt="" />
+          </li>
+          <li>
+            <a class="text-H4 jupiter" href="jupiter.html" data-history
+              >jupiter</a
+            >
+            <img class="chevron" src="./assets/icon-chevron.svg" alt="" />
+          </li>
+          <li>
+            <a class="text-H4 saturn" href="saturn.html" data-history>saturn</a>
+            <img class="chevron" src="./assets/icon-chevron.svg" alt="" />
+          </li>
+          <li>
+            <a class="text-H4 uranus" href="uranus.html" data-history>uranus</a>
+            <img class="chevron" src="./assets/icon-chevron.svg" alt="" />
+          </li>
+          <li>
+            <a class="text-H4 neptune" href="neptune.html" data-history
+              >neptune</a
+            >
+            <img class="chevron" src="./assets/icon-chevron.svg" alt="" />
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="images">
+        <div class="image-container">
+          <img
+            src="./assets/planet-uranus.svg"
+            alt="Desenho de mercúrio"
+            data-image="default"
+          />
+          <img
+            src="./assets/planet-uranus-internal.svg"
+            alt="Desenho do interior de mercúrio"
+            data-structure
+            data-image="internal"
+          />
+          <img
+            src="./assets/geology-uranus.png"
+            alt="Foto da superfícies de mercurio"
+            data-surface
+            data-image="surface"
+          />
+        </div>
+      </div>
+      <div class="content text-BODY">
+        <h1 class="text-H1 uppercase section-title" data-title>uranus</h1>
+        <p data-overview class="hidden visible">
+          Uranus is the seventh planet from the Sun. Its name is a reference to
+          the Greek god of the sky, Uranus according to Greek mythology, was the
+          great-grandfather of Ares. It has the third-largest planetary radius
+          and fourth-largest planetary mass in the Solar System.
+        </p>
+        <a
+          data-overview=""
+          href="https://en.wikipedia.org/wiki/Uranus"
+          target="_blank"
+          class="hidden visible"
+          ><span class="label">Source</span>:
+          <span class="link">Wikipedia</span></a
+        >
+        <p data-structure class="hidden">
+          The standard model of Uranus's structure is that it consists of three
+          layers: a rocky (silicate/iron–nickel) core in the centre, an icy
+          mantle in the middle and an outer gaseous hydrogen/helium envelope.
+          The core is relatively small, with a mass of only 0.55 Earth masses.
+        </p>
+        <a
+          data-structure
+          href="https://en.wikipedia.org/wiki/Uranus#Internal_structure"
+          target="_blank"
+          class="hidden"
+          ><span class="label">Source</span>:
+          <span class="link">Wikipedia</span></a
+        >
+        <p data-surface class="hidden">
+          The composition of Uranus's atmosphere is different from its bulk,
+          consisting mainly of molecular hydrogen and helium. The helium molar
+          fraction, i.e. the number of helium atoms per molecule of gas, is
+          0.15±0.03 in the upper troposphere.
+        </p>
+        <a
+          data-surface
+          href="https://en.wikipedia.org/wiki/Uranus#Atmosphere"
+          target="_blank"
+          class="hidden"
+          ><span class="label">Source</span>:
+          <span class="link">Wikipedia</span></a
+        >
+      </div>
+
+      <div class="buttons">
+        <button data-refers-to="overview" class="btn text-H3 active">
+          <span>01</span>Overview
+        </button>
+        <button data-refers-to="structure" class="btn text-H3">
+          <span>01</span>Structure
+        </button>
+        <button data-refers-to="surface" class="btn text-H3">
+          <span>01</span>Surface
+        </button>
+      </div>
+    </main>
+
+    <section class="botton">
+      <div class="botton-data">
+        <h4 class="lg text-H4 botton-data-title">Rotation time</h4>
+        <p data-incremento data-rotation class="lg text-H2">
+          <span data-float>17.2</span> Days
+        </p>
+      </div>
+      <div class="botton-data">
+        <h4 class="lg text-H4 botton-data-title">Revolution time</h4>
+        <p data-incremento data-revolution class="lg text-H2">
+          <span data-float>84</span> Days
+        </p>
+      </div>
+
+      <div class="botton-data">
+        <h4 class="lg text-H4 botton-data-title">Radius</h4>
+        <p data-incremento data-radius class="lg text-H2">
+          <span data-float>25,362</span> KM
+        </p>
+      </div>
+
+      <div class="botton-data">
+        <h4 class="lg text-H4 botton-data-title">Average temp</h4>
+        <p data-incremento data-temperature class="lg text-H2">
+          <span data-float>-195</span>°c
+        </p>
+      </div>
+    </section>
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>

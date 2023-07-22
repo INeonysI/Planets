@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planetas</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@300;400;500;700&family=League+Spartan:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta
+      name="description"
+      content="Aprenda sobre os planetas, seus interiores e suas superfícies com a ajudar de uma interface amigável e interativa!"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">The planets</h1>
+
+      <nav>
+        <svg
+          class="hamburguer"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="17"
+        >
+          <g fill="" fill-rule="evenodd">
+            <path d="M0 0h24v3H0zM0 7h24v3H0zM0 14h24v3H0z" />
+          </g>
+        </svg>
+        <ul class="menu">
+          <li>
+            <a class="text-H4 mercury" href="mercury.html" data-history
+              >mercury</a
+            >
+            <img class="chevron" src="./assets/icon-chevron.svg" alt="" />
+          </li>
+          <li>
+            <a class="text-H4 venus" href="venus.html" data-history>venus</a>
+            <img class="chevron" src="./assets/icon-chevron.svg" alt="" />
+          </li>
+          <li>
+            <a class="text-H4 earth" href="earth.html" data-history>earth</a>
+            <img class="chevron" src="./assets/icon-chevron.svg" alt="" />
+          </li>
+          <li>
+            <a class="text-H4 mars" href="mars.html" data-history>mars</a>
+            <img class="chevron" src="./assets/icon-chevron.svg" alt="" />
+          </li>
+          <li>
+            <a class="text-H4 jupiter" href="jupiter.html" data-history
+              >jupiter</a
+            >
+            <img class="chevron" src="./assets/icon-chevron.svg" alt="" />
+          </li>
+          <li>
+            <a class="text-H4 saturn" href="saturn.html" data-history>saturn</a>
+            <img class="chevron" src="./assets/icon-chevron.svg" alt="" />
+          </li>
+          <li>
+            <a class="text-H4 uranus" href="uranus.html" data-history>uranus</a>
+            <img class="chevron" src="./assets/icon-chevron.svg" alt="" />
+          </li>
+          <li>
+            <a class="text-H4 neptune" href="neptune.html" data-history
+              >neptune</a
+            >
+            <img class="chevron" src="./assets/icon-chevron.svg" alt="" />
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="images">
+        <div class="image-container">
+          <img
+            src="./assets/planet-jupiter.svg"
+            alt="Desenho de mercúrio"
+            data-image="default"
+          />
+          <img
+            src="./assets/planet-jupiter-internal.svg"
+            alt="Desenho do interior de mercúrio"
+            data-structure
+            data-image="internal"
+          />
+          <img
+            src="./assets/geology-jupiter.png"
+            alt="Foto da superfícies de mercurio"
+            data-surface
+            data-image="surface"
+          />
+        </div>
+      </div>
+      <div class="content text-BODY">
+        <h1 class="text-H1 uppercase section-title" data-title>jupiter</h1>
+        <p data-overview class="hidden visible">
+          Jupiter is the fifth planet from the Sun and the largest in the Solar
+          System. It is a gas giant with a mass two and a half times that of all
+          the other planets in the Solar System combined, but less than
+          one-thousandth the mass of the Sun.
+        </p>
+        <a
+          data-overview=""
+          href="https://en.wikipedia.org/wiki/Jupiter"
+          target="_blank"
+          class="hidden visible"
+          ><span class="label">Source</span>:
+          <span class="link">Wikipedia</span></a
+        >
+        <p data-structure class="hidden">
+          When the Juno arrived in 2016, it found that Jupiter has a very
+          diffuse core that mixes into its mantle. A possible cause is an impact
+          from a planet of about ten Earth masses a few million years after
+          Jupiter's formation, which would have disrupted an originally solid
+          Jovian core.
+        </p>
+        <a
+          data-structure
+          href="https://en.wikipedia.org/wiki/Jupiter#Internal_structure"
+          target="_blank"
+          class="hidden"
+          ><span class="label">Source</span>:
+          <span class="link">Wikipedia</span></a
+        >
+        <p data-surface class="hidden">
+          The best known feature of Jupiter is the Great Red Spot, a persistent
+          anticyclonic storm located 22° south of the equator. It is known to
+          have existed since at least 1831, and possibly since 1665.
+        </p>
+        <a
+          data-surface
+          href="https://en.wikipedia.org/wiki/Jupiter#Great_Red_Spot_and_other_vortices"
+          target="_blank"
+          class="hidden"
+          ><span class="label">Source</span>:
+          <span class="link">Wikipedia</span></a
+        >
+      </div>
+
+      <div class="buttons">
+        <button data-refers-to="overview" class="btn text-H3 active">
+          <span>01</span>Overview
+        </button>
+        <button data-refers-to="structure" class="btn text-H3">
+          <span>01</span>Structure
+        </button>
+        <button data-refers-to="surface" class="btn text-H3">
+          <span>01</span>Surface
+        </button>
+      </div>
+    </main>
+
+    <section class="botton">
+      <div class="botton-data">
+        <h4 class="lg text-H4 botton-data-title">Rotation time</h4>
+        <p data-incremento data-rotation class="lg text-H2">
+          <span data-float>9.93</span> Days
+        </p>
+      </div>
+      <div class="botton-data">
+        <h4 class="lg text-H4 botton-data-title">Revolution time</h4>
+        <p data-incremento data-revolution class="lg text-H2">
+          <span data-float>11.86</span> Days
+        </p>
+      </div>
+
+      <div class="botton-data">
+        <h4 class="lg text-H4 botton-data-title">Radius</h4>
+        <p data-incremento data-radius class="lg text-H2">
+          <span data-float>69,911</span> KM
+        </p>
+      </div>
+
+      <div class="botton-data">
+        <h4 class="lg text-H4 botton-data-title">Average temp</h4>
+        <p data-incremento data-temperature class="lg text-H2">
+          <span data-float>-108</span>°c
+        </p>
+      </div>
+    </section>
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>
