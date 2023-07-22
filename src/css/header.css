@@ -72,7 +72,7 @@
     overflow: hidden;
 
     transition: all 0.3s;
-    animation: fillScreen 1.5s forwards;
+    animation: fillScreen 0.8s forwards;
 
     position: absolute;
     top: 4.3rem;

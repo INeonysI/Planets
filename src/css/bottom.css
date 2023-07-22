@@ -1,6 +1,6 @@
 .botton {
   width: 80%;
-  margin: 50px auto;
+  margin: 80px auto;
 
   display: grid;
   grid-template-columns: repeat(4, 20%);
@@ -25,12 +25,14 @@
 @media (max-width: 1024px) {
   .botton {
     grid-template-columns: repeat(4, 23%);
+
+    margin: 20px auto 40px;
   }
 }
 @media (max-width: 768px) {
   .botton {
     grid-template-columns: 1fr;
-    width: 90%;
+    width: 95%;
     gap: 0.5rem;
   }
 

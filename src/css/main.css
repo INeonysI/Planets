@@ -69,11 +69,12 @@ img[data-structure] {
 
 img[data-surface] {
   position: absolute;
-  top: 100%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 50%);
 
-  width: 40%;
+  width: 50%;
+  max-width: 180px;
 }
 
 /* TEXTO */
@@ -157,8 +158,7 @@ img[data-surface] {
 
   .images {
     grid-column: 1 / 3;
-    grid-row: 1 / 2;
-    margin-bottom: 120px;
+    margin-bottom: 100px;
   }
 }
 
@@ -166,18 +166,24 @@ img[data-surface] {
   main {
     grid-template-columns: 1fr;
 
-    width: 90%;
+    width: 95%;
     margin: 0 auto 0 auto;
   }
 
   .images {
     grid-column: 1 / 2;
-    grid-row: 2 / 3;
+    grid-row: 2;
+
+    width: 95vw;
   }
 
   .image-container {
     margin-top: 60px;
     max-width: 100%;
+  }
+
+  .content {
+    width: 95vw;
   }
 
   .buttons {
