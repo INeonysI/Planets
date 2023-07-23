@@ -6,7 +6,7 @@ O projeto consiste em uma página web com o intuito de ensinar sobre os planetas
 
 Caso queira utilizar o site, entre em https://planetsdev.netlify.app/src/index.html
 
-![Site responsivo. Design adaptável para todas as plataformas](https://github.com/INeonysI/Pokedex/main/blob/Assets/responsive.png)
+![Site responsivo. Design adaptável para todas as plataformas](https://github.com/INeonysI/Planets/blob/main/Assets/responsive.png)
 
 ## Tecnologias
 
