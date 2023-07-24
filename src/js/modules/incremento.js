@@ -1,11 +1,9 @@
 export default function initIncremento() {
   const valores = document.querySelectorAll("[data-incremento] [data-float]");
   valores.forEach((item) => {
-    const regexp = /[^.0-9]/g;
+    const regexp = /[^\-.0-9]/g;
     const valor = +item.innerHTML.replace(regexp, "");
     const incremento = valor / 100;
-    console.log(incremento);
-    console.log(valor);
 
     item.innerHTML = "0";
     let start = 0;
@@ -17,7 +15,7 @@ export default function initIncremento() {
       start += incremento;
       item.innerHTML = start.toFixed(1);
 
-      if (start > valor) {
+      if (Math.abs(start) > Math.abs(valor)) {
         clearTimeout(interval);
         item.innerHTML = valor;
       }

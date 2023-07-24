@@ -39,7 +39,10 @@ export default function replaceContent(planet) {
   radius.innerHTML = `<span data-float>${planet.radius
     .split(/\s/g)
     .join("</span> ")}`;
+  console.log(
+    `<span data-float>${planet.temperature.split(/\s/g).join("</span> ")}`
+  );
   temperature.innerHTML = `<span data-float>${planet.temperature
-    .split(/\s/g)
-    .join("</span> ")}`;
+    .split(/°/g)
+    .join("</span> °")}`;
 }
