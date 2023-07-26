@@ -1,0 +1,37 @@
+.playing {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+}
+
+.container-music {
+  position: relative;
+
+  aspect-ratio: 1/1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  background-color: var(--c9);
+}
+
+.container-music::before {
+  content: "";
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  transform: rotate(40deg);
+  background: #fff;
+
+  transition: all 0.3s;
+}
+
+.container-music[data-playing="true"]::before {
+  height: 0%;
+}
