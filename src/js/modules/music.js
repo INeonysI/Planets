@@ -1,10 +1,11 @@
-function play(audio, element) {
+function play(audio) {
+  console.log(this);
   if (audio.paused) {
     audio.play();
-    element.dataset.playing = true;
+    this.dataset.playing = true;
   } else {
     audio.pause();
-    element.dataset.playing = false;
+    this.dataset.playing = false;
   }
 }
 
@@ -14,5 +15,5 @@ export default function initMusic() {
   const audio = new Audio("./assets/cosmic-glow-6703.mp3");
   audio.loop = true;
 
-  button.addEventListener("click", () => play(audio, button));
+  button.addEventListener("click", () => play.call(button, audio));
 }
